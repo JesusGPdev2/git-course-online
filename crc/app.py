@@ -1,5 +1,7 @@
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
-# def sum(a, b):
-#     return a+b
+
+@app.route("/")
+def idex():
+    return "bye code!"
