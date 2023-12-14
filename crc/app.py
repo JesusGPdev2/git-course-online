@@ -3,8 +3,12 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def idex():
+def index():
     return "bye code!"
+
+@app.route("/hello")
+def greating():
+    return "hello you!"
 
 @app.route("/sum/<int:a>/<int:b>")
 def sum(a: int, b: int):
