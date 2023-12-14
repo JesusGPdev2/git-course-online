@@ -9,6 +9,7 @@ def index():
 @app.route("/hello")
 def greating():
     return "hello you!"
+
 # http://localhost:4000/sum/100/153
 @app.route("/sum/<int:a>/<int:b>")
 def sum(a: int, b: int):
